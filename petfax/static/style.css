@@ -1,0 +1,159 @@
+
+* {
+    /* outline: 1px solid red; */
+    font-family: 'Poetsen One';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 184, 184);
+}
+
+.container {
+    width: 95%;
+    height: 100%;
+    border: 1px solid #ccc; 
+    background-color: white;
+    margin: 3% 0;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+
+h1 {
+    margin: 0;
+    padding: .3em;
+    align-items: center;
+    font-weight: 300;
+    font-size: 3em;
+    width: 100%;
+    height: 10%;
+    color: #D16014;
+
+}
+
+.intro {
+    background: #acacac;
+    padding: 1em;
+    width: 80%;
+    margin: auto;
+    border-radius: 1em;
+    text-align: center;
+    font-weight: 400;
+}
+
+h2 {
+    color: #2B9EB3;
+    font-size: 1.75em;
+    margin: 10px 0;
+}
+
+a {
+    align-items: center;
+}
+
+.pet {
+    width: 49%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+.pet_name {
+    width: 100%;
+}
+
+
+
+.pet_photo {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+
+.pet_photo:hover , a:hover {
+    transform: translateY(-5px);
+    
+}
+
+.show-container {
+    max-width: 100%; 
+    max-height: auto; 
+}
+
+.show-container img {
+    width: 50%;
+    height: auto;
+}
+
+.fact {
+    margin: auto;
+    padding: 1em;
+    background: #acacac;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 1em;
+
+}
+
+h3 {
+    color: white;
+    margin: 2% 0;
+    font-size: 1.5em;
+    
+}
+
+.show-pet {
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+label {
+    margin-top: 10px;
+    color: #555555;
+    font-size: 1.5em;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type='submit'] {
+    color: #2B9EB3;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.fact-link {
+    width: 100%;
+}

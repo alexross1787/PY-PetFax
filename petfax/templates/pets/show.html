@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Meet the Pets</h1>
+        <div class="fact"><h3>Did you know?
+           
+        </h3>{{ pet.pet_fact}}</div>
+
+    <div class="show-pet">
+    <h2>{{ pet.pet_name }}</h2>
+    <div class="show-container">
+        <img src="{{ pet.pet_photo }}" alt="photo of pet" class="pet_photo"/>    
+    </div>
+    <a href="/pets">Back</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+

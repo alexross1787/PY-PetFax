@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Facts</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <div class="container">
+
+    <h1>New Facts</h1>
+    <form action="/facts" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="fact">Fact:</label>
+        <input type="text" id="fact" name="fact"><br>
+
+        <input type="submit" value="Submit">
+        <a href="/pets">Back</a>
+
+    </form>
+
+    </div>
+</body>
+</html>

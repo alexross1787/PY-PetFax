@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container">
+                
+    <h1>PetFax</h1>
+    <div class="intro">Welcome to PetFax! We are a no-kill shelter dedicated to finding our pets loving homes and educating the public with fun facts.
+        </div>
+    {% for pet in pets %}
+    <div class="pet">
+    <h2 class="pet_name">{{ pet.pet_name }}</h2>
+    <a href="/pets/{{ pet.pet_id}}">
+    <img src="{{ pet.pet_photo }}" alt="Photo of pet" class="pet_photo"/>
+    </a>
+    <a href="/pets/{{ pet.pet_id}}">Learn More</a>
+</div>
+{% endfor %}
+<div class="fact-link">
+    <a href="/facts/new">New Facts?</a>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
