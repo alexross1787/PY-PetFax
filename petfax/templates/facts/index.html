@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <h1>UserFax</h1>
+        {% for fact in facts %}
+        <div class="fact-container">
+            <h4>Submitted by {{ fact.submitter }}</h4>
+            {{ fact.fact}}
+        </div>
+        {% endfor %}
     </div>
 </body>
 </html>
